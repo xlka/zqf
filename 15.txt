@@ -1,0 +1,16 @@
+输入一个正整数n，求0到这个数以内的所有 奇数的和 与 偶数的和。
+boole = True
+while boole:
+    try:
+        n = int(input("请输入一个正整数："))
+        boole = False
+        odd = 0   #偶数
+        even = 0   #奇数
+        for i in range(n):
+            if i & 1:
+                odd += i
+            else:
+                even += i
+        print(f"奇数和：{odd},偶数和：{even}")
+    except:
+        print("输入有误");

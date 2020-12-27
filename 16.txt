@@ -1,0 +1,6 @@
+求1到5的阶乘结果
+num = 5
+factorial = 1
+for i in range(1,num+1):
+    factorial *=i
+    print(f"{i}的阶乘为：{factorial}")

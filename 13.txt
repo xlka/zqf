@@ -1,0 +1,21 @@
+死循环输入数字，输入后打印出之前输入的最大值和之前所有数字的平均数，如果输入的不是数字，而是quit字符串或者空格，则结束循环，退出程序。
+boolt = True
+numSum = 0
+count = 0
+numMax = None
+while boolt:
+    num = input("请输入数字（空格或者quit退出）：")
+    if num == " " or num.lower() == "quit" :
+        break;
+    try:
+        num = int(num)
+        if not count:
+            numMax = num
+        elif numMax < num:
+            numMax = num        
+        numSum += num
+        count += 1
+        print(f"最大值为：{numMax}\t平均值为：{float(numSum)/count}")
+    except:
+        print("输入数据有误！")
+        continue

@@ -1,0 +1,12 @@
+用 * 打印一个边长为 n 的正方形，n 为整数。
+boole = True
+while boole:
+    try:
+        n = int(input("请输入正方形边长："))
+        boole = False
+        for i in range(n):
+            for k in range(n):
+                print("*",end=" ",sep="");
+            print(sep="");
+    except:
+        print("输入有误");

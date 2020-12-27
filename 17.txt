@@ -1,0 +1,13 @@
+输入一个整数，判断他是否是素数。
+num = int(input("请输入一个整数："))
+if(num<2): 
+    print(f"{num}不是素数")
+elif num==2:
+    print(f"{num}是素数")
+else:
+    for i in range(2,int(num**0.5+2)):
+        if not num%i :
+            break
+    else:
+        print(f"{num}是素数")
+    print(f"{num}不是素数")

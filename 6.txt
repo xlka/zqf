@@ -1,0 +1,18 @@
+ 编写函数devide(x, y)，x为被除数，y为除数。要求考虑异常情况的处理。
+
+1、 被零除时，输出"division by zero! "；
+
+2、 类型不一致时，强制转换为整数再调用本函数；
+
+3、 若没有上述异常则输出计算结果。
+
+ 
+
+def test(password, earning, age):
+    #assert 1<0
+    assert password[0] not in ['0','1','2','3','4','5','6','7','8','9']
+    assert int(earning)>=0 and int(earning)<=20000
+    assert int(age)>=18 and int(age)<=70
+    return True
+print(test('as','11','30'))
+ 

@@ -1,0 +1,11 @@
+编写函数test(password, earning, age)用于检测输入错误。要求输入密码password第一个符号不能是数字，工资earnings的范围是0—20000，工作年龄的范围是18—70。使用断言来实现检查，若三项检查都通过则返回True。
+
+ 
+
+def test(password, earning, age):
+    #assert 1<0
+    assert password[0] not in ['0','1','2','3','4','5','6','7','8','9']
+    assert int(earning)>=0 and int(earning)<=20000
+    assert int(age)>=18 and int(age)<=70
+    return True
+ 
