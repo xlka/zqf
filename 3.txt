@@ -1,0 +1,15 @@
+、 一个数如果恰好等于它的因子之和，这个数就称为“完数”，例如， 6 的因子
+为 1、 2、 3，而 6=1+2+3，因此 6 是“完数”。编程序找出 1000 之内的所有完数，
+并按下面的格式输出其因子：
+6 its factors are 1, 2, 3
+for i in range(1001): 
+if i==0: continue 
+s = 0 
+for j in range(i): 
+if j==0: continue 
+if i%j==0: s=s+j 
+if s==i: print('{} its factors are '.format(i),end='') 
+for j in range(i): if j == 0: 
+continue if i % j == 0: 
+print(j,end=' ') 
+print('\n')
